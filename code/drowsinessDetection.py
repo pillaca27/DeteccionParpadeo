@@ -9,15 +9,15 @@ import time
 
 mixer.init()
 
-sound = mixer.Sound("../alarm.wav")
+sound = mixer.Sound("E:/DeteccionParpadeo/alarm.wav")
 
-face = cv2.CascadeClassifier("../files/haarcascade_frontalface_alt.xml")
-leye = cv2.CascadeClassifier("../files/haarcascade_lefteye_2splits.xml")
-reye = cv2.CascadeClassifier("../files/haarcascade_righteye_2splits.xml")
+face = cv2.CascadeClassifier("E:/DeteccionParpadeo/files/haarcascade_frontalface_alt.xml")
+leye = cv2.CascadeClassifier("E:/DeteccionParpadeo/files/haarcascade_lefteye_2splits.xml")
+reye = cv2.CascadeClassifier("E:/DeteccionParpadeo/files/haarcascade_righteye_2splits.xml")
 
 lbl = ["Close", "Open"]
 
-model = load_model("../models/cnnCat8.h5")
+model = load_model("E:/DeteccionParpadeo/models/cnnCat8.h5")
 
 path = os.getcwd()
 cap = cv2.VideoCapture(0)  # cv2.VideoCapture('ejemplo2.mp4')

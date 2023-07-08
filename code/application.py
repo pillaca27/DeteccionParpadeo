@@ -23,9 +23,9 @@ st.text(
 # st.image(image_data)
 
 
-face = cv2.CascadeClassifier("haar cascade files/haarcascade_frontalface_alt.xml")
-leye = cv2.CascadeClassifier("haar cascade files/haarcascade_lefteye_2splits.xml")
-reye = cv2.CascadeClassifier("haar cascade files/haarcascade_righteye_2splits.xml")
+face = cv2.CascadeClassifier("E:/DeteccionParpadeo/files/haarcascade_frontalface_alt.xml")
+leye = cv2.CascadeClassifier("E:/DeteccionParpadeo/files/haarcascade_lefteye_2splits.xml")
+reye = cv2.CascadeClassifier("E:/DeteccionParpadeo/files/haarcascade_righteye_2splits.xml")
 
 lbl = ["Close", "Open"]
 path = os.getcwd()
